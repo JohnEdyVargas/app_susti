@@ -15,23 +15,50 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             Container(
-              child: Column(
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Location"),
-                  Row(
+                  Column(
                     children: [
-                      Row(
-                        children: [
-                          Icon(Icons.location_city),
-                          Text("Bali , indonesia"),
-                        ],
-                      ),
-                      Icon(Icons.alarm),
+                      Text("Location"),
+                      Text("bali , Indonesia"),
                     ],
-                  )
+                  ),
+                  Icon(Icons.notification_add),
                 ],
               ),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      "https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg"),
+                  radius: 25,
+                ),
+                CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      "https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg"),
+                  radius: 25,
+                ),
+                CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      "https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg"),
+                  radius: 25,
+                ),
+                CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      "https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg"),
+                  radius: 25,
+                ),
+                CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      "https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg"),
+                  radius: 25,
+                ),
+              ],
+            )
           ],
         ),
       ),
